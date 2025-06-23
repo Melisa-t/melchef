@@ -259,3 +259,32 @@ body {
 .step-img {
   z-index: 1;
 }
+
+.featured-in{
+  padding: 4.8rem 0 3.2rem 0;
+}
+
+.heading-featured{
+  font-size: 1.6rem;
+  color: #555;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.logos{
+  display: flex;
+  justify-content: space-between;
+  
+
+}
+
+.logos img{
+  height: 3rem;
+  filter: grayscale(100%);
+  transition: 0.2s;
+}
+
+.logos img:hover{
+  filter: grayscale(0);
+}
