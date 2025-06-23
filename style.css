@@ -295,13 +295,14 @@ body {
 }
 .meal-container img {
 width: 100%;
-margin-bottom: 1.6rem;
+
 }
 .meal-attributes{
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
+  padding: 0 2.4rem 2.4rem 2.4rem;
 }
 .meals-section {
   padding: 9.6rem 0;
@@ -312,9 +313,36 @@ margin-bottom: 1.6rem;
   color: #333;
   font-weight: 600;
   margin-bottom: 3.2rem;
+    padding: 0 2.4rem;
 }
 .meal-attribute{
   font-size: 1.6rem;
   display: flex;
   gap: 1.6rem;
+  align-items: center;
+}
+.tag{
+  color: #222;
+  font-size: 1.1rem;
+  padding: 0.4rem 0.8rem;
+  display: inline-block;
+  text-transform: uppercase;
+  background-color: #66a80f;
+  color: #fff;
+  border-radius: 100px;
+  
+}
+ion-icon{
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #d9480f;
+}
+
+.meal-tags{
+  margin: 1.2rem 0;
+      padding: 0 2.4rem;
+}
+
+.meal-container{
+  box-shadow: 0px 0px 30px #0000001f;
 }
