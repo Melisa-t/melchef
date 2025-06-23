@@ -281,10 +281,12 @@ body {
 
 .logos img{
   height: 3rem;
-  filter: grayscale(100%);
+  filter: brightness(0);
+  opacity: 50%;
   transition: 0.2s;
 }
 
 .logos img:hover{
-  filter: grayscale(0);
+  filter: brightness(100%);
+  opacity: 100%;
 }
