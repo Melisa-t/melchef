@@ -407,32 +407,52 @@ ion-icon {
   border-bottom: 1px solid transparent;
 }
 
-
-.meal-container:hover{
+.meal-container:hover {
   transform: scale(1.1);
   box-shadow: 0px 0px 50px #0000000d;
-
 }
 
-.testimonials{
+.testimonials {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2.4rem;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+  gap: 3.6rem;
+  background-color: #fff4e6;
 }
 
-.testimonial-img{
+.testimonials-container {
+  padding: 9.6rem;
+}
+
+.testimonial-img {
   width: 6.4rem;
   border-radius: 50%;
   margin-bottom: 1.2rem;
 }
 
-.testimonial-text{
+.testimonial-text {
   font-size: 1.6rem;
-line-height: 1.3;
-margin-bottom: 1.2rem;
+  line-height: 1.3;
+  margin-bottom: 1.2rem;
 }
 
-.testimonial-author{
+.testimonial-author {
   color: #555;
   font-size: 1.2rem;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
+  align-items: center;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
 }
