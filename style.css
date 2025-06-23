@@ -263,11 +263,11 @@ body {
   z-index: 1;
 }
 
-.featured-in{
+.featured-in {
   padding: 4.8rem 0 3.2rem 0;
 }
 
-.heading-featured{
+.heading-featured {
   font-size: 1.6rem;
   color: #555;
   text-transform: uppercase;
@@ -275,74 +275,87 @@ body {
   margin-bottom: 2.5rem;
 }
 
-.logos{
+.logos {
   display: flex;
   justify-content: space-between;
-  
-
 }
 
-.logos img{
+.logos img {
   height: 3rem;
   filter: brightness(0);
   opacity: 50%;
   transition: 0.2s;
 }
 
-.logos img:hover{
+.logos img:hover {
   filter: brightness(100%);
   opacity: 100%;
 }
 .meal-container img {
-width: 100%;
-
+  width: 100%;
 }
-.meal-attributes{
+.meal-attributes {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
-  padding: 0 2.4rem 2.4rem 2.4rem;
 }
 .meals-section {
   padding: 9.6rem 0;
 }
 
-.meal-title{
+.meal-title {
   font-size: 2.4rem;
   color: #333;
   font-weight: 600;
   margin-bottom: 3.2rem;
-    padding: 0 2.4rem;
 }
-.meal-attribute{
+.meal-attribute {
   font-size: 1.6rem;
   display: flex;
   gap: 1.6rem;
   align-items: center;
 }
-.tag{
+.tag {
   color: #222;
   font-size: 1.1rem;
   padding: 0.4rem 0.8rem;
   display: inline-block;
   text-transform: uppercase;
-  background-color: #66a80f;
-  color: #fff;
+
   border-radius: 100px;
-  
+  font-weight: 600;
 }
-ion-icon{
+
+.tag--vegan{
+background-color: #94d82d;
+}
+
+.tag--vegatarian{
+  background-color: #66a80f;
+}
+
+.tag--paleo{
+  background-color: #ffd43b;
+}
+ion-icon {
   width: 2.4rem;
   height: 2.4rem;
   color: #d9480f;
 }
 
-.meal-tags{
+.meal-tags {
   margin: 1.2rem 0;
-      padding: 0 2.4rem;
+  display: flex;
+  gap: 1.6rem;
 }
 
-.meal-container{
+.meal-container {
   box-shadow: 0px 0px 30px #0000001f;
+  border-radius: 11px;
+  overflow: hidden;
+}
+
+.meal-content {
+  padding: 3.2rem 4.8rem;
 }
