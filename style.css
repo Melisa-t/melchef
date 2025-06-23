@@ -167,7 +167,8 @@ body {
 
 .grid {
   display: grid;
-  gap: 9.6rem;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
 }
 
 .grid--2cols {
@@ -178,4 +179,50 @@ body {
   max-width: 120rem;
   padding: 0 3.2rem;
   margin: 0 auto;
+}
+
+.section-how{
+  padding: 9.6rem 0;
+}
+
+.subheading{
+  font-size: 1.6rem;
+  letter-spacing: 0.75px;
+  font-weight: 600;
+  color: #d9480f;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 1.6rem;
+}
+
+.heading-secondary{
+  font-size: 4.4rem;
+  margin-bottom: 9.6rem;
+}
+
+.step-img{
+  width: 40%;
+}
+
+.step-number{
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+
+.heading-tertiary{
+  font-size: 3rem;
+  margin-bottom: 3.2rem;
+}
+
+.step-description{
+  font-size:  1.6rem;
+  line-height: 1.8rem;
+}
+
+.step-img-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
