@@ -14,19 +14,21 @@ body {
 }
 
 .hero-img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 9.6rem;
-  padding: 4.8rem 0 9.6rem 0;
+  padding: 0 3.2rem;
   max-width: 130rem;
   margin: 0 auto;
+  align-items: center;
 }
 .hero-section {
-  background-color: #e7f5ff;
+  background-color: #fff4e6;
+  padding: 4.8rem 0 9.6rem 0;
 }
 
 .hero-header-primary {
@@ -49,7 +51,7 @@ body {
   width: 3.6rem;
   border-radius: 50%;
   margin-right: -1rem;
-  border: 3px solid #e7f5ff;
+  border: 3px solid #fff4e6;
 }
 
 .btn:link,
@@ -61,6 +63,7 @@ body {
   font-weight: bold;
   font-size: 1.6rem;
   border-radius: 12px;
+  margin-bottom: 2.4rem;
 }
 .btn:hover,
 .btn:active {
@@ -74,25 +77,25 @@ body {
 
 .btn-full:link,
 .btn-full:visited {
-  background-color: #1864ab;
+  background-color: #e8590c;
   color: #fff;
 }
 
 .btn-outline:link,
 .btn-outline:visited {
-  color: #1971c2;
+  color: #fd7e14;
   background-color: #fff;
 }
 .btn-full:hover,
 .btn-full:active {
-  background-color: #1971c2;
+  background-color: #fd7e14;
 }
 
 .btn-outline:hover,
 .btn-outline:active {
-  color: #1971c2;
+  color: #fd7e14;
   background-color: #fff;
-  box-shadow: inset 0 0 0 2px #1971c2;
+  box-shadow: inset 0 0 0 2px #fd7e14;
 }
 
 .margin-right-sm {
@@ -116,17 +119,48 @@ body {
 }
 
 .customer-div span {
-  color: #1864ab;
+  color: #d9480f;
   font-weight: bold;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 9.6rem;
-    padding: 0 4.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2.4rem;
+  padding: 3rem 4.8rem;
+  background-color: #fff4e6;
 }
 .logo {
-    height: 2.4rem;
+  height: 3.2rem;
+}
+
+.section-nav-list {
+  list-style-type: none;
+  display: flex;
+  font-size: 1.6rem;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+.section-nav-link:link, .section-nav-link:visited {
+    text-decoration: none;
+    transition: all 0.5s;
+    color: #333;
+    font-weight: bold;
+}
+
+.section-nav-link:hover, .section-nav-link:active {
+color: #d9480f;
+}
+
+.section-nav-link.cta{
+  background-color: #e8590c;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.section-nav-link.cta:hover{
+  background-color: #fd7e14;
 }
