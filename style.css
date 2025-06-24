@@ -500,7 +500,7 @@ ion-icon {
   text-align: center;
   margin-top: 2rem;
 }
-.pricing-plan{
+.pricing-plan {
   padding: 4.8rem;
   transition: all 0.2s;
   background-color: #fff4e6;
@@ -508,11 +508,38 @@ ion-icon {
   border-radius: 11px;
   width: 75%;
 }
-.pricing-plan:hover{
+.pricing-plan:hover {
   box-shadow: 0px 0px 30px #d9480f0f;
   transform: scale(1.1);
 }
 
-.starter{
+.starter {
+  box-shadow: inset 0 0 0 2px #fff4e6;
+  background-color: #fff;
   justify-self: end;
+}
+.starter:hover {
+  box-shadow: 0 0 30px #fff4e6;
+  transform: scale(1.1);
+}
+
+.pricing-plan:last-child{
+    position: relative;
+overflow: hidden;
+}
+.pricing-plan:last-child::after {
+  content: "Best Value";
+  background-color: #ffd43b;
+  color: #333;
+  font-weight: 700;
+  padding: 0.8rem 8rem;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 4%;
+  right: -19%;
+  transform: rotate(45deg);
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
 }
