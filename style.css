@@ -53,7 +53,7 @@ body {
   margin-right: -1rem;
   border: 3px solid #fff4e6;
 }
-
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -63,16 +63,8 @@ body {
   font-weight: bold;
   font-size: 1.6rem;
   border-radius: 12px;
-  margin-bottom: 2.4rem;
-}
-.btn:hover,
-.btn:active {
-  display: inline-block;
-  padding: 1.2rem 2.4rem;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.6rem;
-  border-radius: 12px;
+  border: none;
+  cursor: pointer;
 }
 
 .btn-full:link,
@@ -205,7 +197,7 @@ body {
 
 .heading-secondary {
   font-size: 4.4rem;
-  margin-bottom: 9.6rem;
+  margin-bottom: 5.2rem;
 }
 
 .step-img {
@@ -580,12 +572,12 @@ ion-icon {
 }
 
 .cta-box {
+  color: #2e1202;
   display: grid;
   grid-template-columns: 2fr 1fr;
   background-image: linear-gradient(to right bottom, #fd7e14, #e8590c);
   border-radius: 11px;
   overflow: hidden;
-
   height: 50rem;
 }
 
@@ -594,4 +586,43 @@ ion-icon {
     url("img/eating.jpg");
   background-position: center;
   background-size: cover;
+}
+
+.text-box-cta {
+  padding: 4.8rem 6.4rem;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2.4rem;
+  column-gap: 3.2rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  background-color: #fff4e6;
+  width: 100%;
+  padding: 1.2rem;
+  border-radius: 9px;
+  border: none;
+  box-shadow: 0px 0px 30px #0000001f;
+  color: inherit;
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
 }
