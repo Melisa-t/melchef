@@ -578,7 +578,6 @@ ion-icon {
   background-image: linear-gradient(to right bottom, #fd7e14, #e8590c);
   border-radius: 11px;
   overflow: hidden;
-  height: 50rem;
 }
 
 .img-box-cta {
@@ -625,4 +624,15 @@ ion-icon {
 
 .cta-form input::placeholder {
   color: #aaa;
+}
+
+.btn--form{
+  background-color: #2e1202;
+  color: #fff4e6;
+  align-self: end;
+}
+
+.btn--form:hover{
+  background-color: #fff4e6;
+  color: #2e1202;
 }
