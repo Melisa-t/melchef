@@ -501,11 +501,18 @@ ion-icon {
   margin-top: 2rem;
 }
 .pricing-plan{
-  padding: 4.8rem 2.4rem;
+  padding: 4.8rem;
   transition: all 0.2s;
-  box-shadow: 0px 0px 30px #0000001f;
+  background-color: #fff4e6;
+  box-shadow: 0px 0px 30px#d9480f21;
+  border-radius: 11px;
+  width: 75%;
 }
 .pricing-plan:hover{
-  box-shadow: 0px 0px 30px #0000000d;
+  box-shadow: 0px 0px 30px #d9480f0f;
   transform: scale(1.1);
+}
+
+.starter{
+  justify-self: end;
 }
