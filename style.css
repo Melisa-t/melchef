@@ -543,3 +543,34 @@ overflow: hidden;
 .grid:not(:last-child) {
   margin-bottom: 9.6rem;
 }
+
+.grid--4cols{
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.feature-icon{
+  margin-bottom: 1.6rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  padding: 1.2rem;
+  border-radius: 50%;
+  background-color: #fff4e6;
+}
+
+.feature-title{
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.feature-text{
+  font-size: 1.6rem;
+line-height: 1.3;
+}
+
+.plan-details{
+  line-height: 1.6;
+  font-size: 1.6rem;
+  text-align: center;
+}
