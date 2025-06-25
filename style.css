@@ -725,3 +725,8 @@ address{
 address p{
 margin-bottom: 2.4rem;
 }
+
+
+.footer-grid{
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
