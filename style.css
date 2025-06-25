@@ -32,7 +32,7 @@ body {
 }
 
 .hero-header-primary {
-  font-size: 4.8rem;
+  font-size: 5.2rem;
   margin-bottom: 4.8rem;
   letter-spacing: -1.3px;
 }
@@ -406,12 +406,19 @@ body {
   box-shadow: 0px 0px 50px #0000000d;
 }
 
-.testimonials {
+.testimonials-section {
   display: grid;
   grid-template-columns: 55fr 45fr;
   align-items: center;
   gap: 3.6rem;
   background-color: #fff4e6;
+}
+
+.testimonials{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 3.6rem;
 }
 
 .testimonials-container {
@@ -715,19 +722,127 @@ body {
   color: #555;
 }
 
-address{
+address {
   display: flex;
   flex-direction: column;
 
   font-style: normal;
   font-size: 1.6rem;
- line-height: 1.6;
+  line-height: 1.6;
 }
-address p{
-margin-bottom: 2.4rem;
+address p {
+  margin-bottom: 2.4rem;
 }
 
-
-.footer-grid{
+.footer-grid {
   grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+/* SMALLER LAPTOPS */
+
+@media screen and (max-width: 85em) {
+  .hero {
+    max-width: 120rem;
+  }
+  .hero-header-primary {
+    font-size: 4.4rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* TABLETS */
+
+@media screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+  .section-pricing,
+  .footer,
+  .section-how,
+  .hero-section,
+  .meals-section,
+  .cta-section {
+    padding: 7rem 0;
+  }
+  .header-section {
+    padding: 4.8rem 3.2rem;
+  }
+  .hero {
+    gap: 5.2rem;
+  }
+  .section-nav-list {
+    gap: 2.4rem;
+  }
+  .testimonials-container {
+    padding: 6.4rem;
+  }
+}
+
+@media screen and (max-width: 56em) {
+  html {
+    font-size: 50%;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+  }
+  .hero-img {
+    width: 60%;
+    justify-self: center;
+  }
+  .customer-div {
+    justify-self: center;
+  }
+  .hero-text-box {
+    text-align: center;
+    padding: 0 7rem;
+  }
+
+  .section-pricing,
+  .footer,
+  .section-how,
+  .hero-section,
+  .meals-section,
+  .cta-section {
+    padding: 4.8rem 0;
+  }
+  .logos img {
+    height: 2.4rem;
+  }
+  .step-number {
+    font-size: 6.4rem;
+  }
+  .meal-content{
+    padding: 2.4rem 3.2rem;
+  }
+
+  .testimonials-section{
+    grid-template-columns: 1fr;
+  }
+
+  .gallery{
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+    .section-nav-list {
+    gap: 2rem;
+  }
+  .cta-box{
+    grid-template-columns: 3fr 2fr;
+  }
+  .cta-form{
+    grid-template-columns: 1fr;
+  }
 }
