@@ -668,8 +668,9 @@ body {
 
 .footer-heading {
   font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 3.2rem;
+  color: #333;
 }
 
 .footer-nav {
@@ -695,7 +696,7 @@ body {
 .logo-col {
   display: flex;
   flex-direction: column;
-  align-items: center;
+
   gap: 3.2rem;
 }
 
@@ -919,4 +920,63 @@ address p {
   .nav--open .mobile-nav-icon[name="menu-outline"] {
     display: none;
   }
+}
+/* SMALLER TABLETS */
+@media screen and (max-width: 44em) {
+  .grid--3cols,  .grid--4cols{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .diets{
+    grid-column: span 2;
+    justify-self: center;
+  }
+
+
+
+  .pricing-plan{
+    width: 100%;
+      padding: 2.4rem;
+  }
+  
+  .plan-price {
+  font-size: 4.4rem;
+  margin-bottom: 1rem;
+}
+
+.plan-price span {
+  font-size: 2.4rem;
+  margin-right: 0.5rem;
+}
+
+
+.list-item {
+  gap: 1.2rem;
+  font-size: 1.6rem;
+}
+
+  .pricing-plan:last-child::after {
+  content: "Best Value";
+  background-color: #ffd43b;
+  color: #333;
+  font-weight: 700;
+  padding: 0.8rem 6rem;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 6%;
+  right: -19%;
+  transform: rotate(45deg);
+}
+
+.footer-grid{
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.nav-col{
+  grid-row: 1;
+  grid-column: span 2;
+}
+
+.logo-col, .address-col{
+  grid-column: span 3;
+}
 }
