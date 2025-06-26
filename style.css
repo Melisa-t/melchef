@@ -7,10 +7,12 @@
 html {
   font-size: 62.5%;
   font-family: sans-serif;
+  overflow-x: hidden;
 }
 
 body {
   color: #333;
+  overflow-x: hidden;
 }
 
 .hero-img {
@@ -121,6 +123,7 @@ body {
   height: 2.4rem;
   padding: 4.8rem 6.4rem;
   background-color: #fff4e6;
+  position: relative;
 }
 .logo {
   height: 4.8rem;
@@ -882,7 +885,11 @@ address p {
     display: flex;
     align-items: center;
     justify-content: center;
-  
+
+    transform: translateX(100%);
+
+    transition: all 0.5s;
+
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
@@ -893,13 +900,23 @@ address p {
     gap: 4.8rem;
   }
 
-  .section-nav-link:link, .section-nav-link:visited{
+  .section-nav-link:link,
+  .section-nav-link:visited {
     font-size: 3rem;
   }
 
-  .nav--open{
+  .nav--open .nav-bar {
+    transform: translateX(0);
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
+  }
+
+  .nav--open .mobile-nav-icon[name="close-outline"] {
+    display: block;
+  }
+
+  .nav--open .mobile-nav-icon[name="menu-outline"] {
+    display: none;
   }
 }
