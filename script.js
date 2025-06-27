@@ -11,23 +11,24 @@ navBtn.addEventListener(`click`, function () {
 
 // SMOOTH SCROLLING BEHAVIOR IN JS. SWITCHED WITH CSS
 
-// const allLinks = document.querySelectorAll(`a`);
-// allLinks.forEach((link) => {
-//   link.addEventListener(`click`, function (e) {
-//     e.preventDefault();
-//     const href = link.getAttribute(`href`);
-//     if (href === `#`)
-//       window.scrollTo({
-//         top: 0,
-//         behaviour: "smooth",
-//       });
+const allLinks = document.querySelectorAll(`a`);
+allLinks.forEach((link) => {
+  link.addEventListener(`click`, function (e) {
+    e.preventDefault();
+    const href = link.getAttribute(`href`);
+    if (href === `#`)
+      window.scrollTo({
+        top: 0,
+        behaviour: "smooth",
+      });
 
-//     if (href !== `#` && href.startsWith(`#`)) {
-//       const section = document.querySelector(href);
-//       section.scrollIntoView({ behavior: "smooth" });
-//     }
-//   });
-// });
+    if (href !== `#` && href.startsWith(`#`)) {
+      const section = document.querySelector(href);
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+    if (link.classList.contains(`section-nav-link`)) header.classList.remove(`nav--open`)
+  });
+});
 
 //  **************************************
 
