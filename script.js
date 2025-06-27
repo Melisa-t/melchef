@@ -4,10 +4,29 @@ copyright.textContent = `${year}`;
 
 const navBtn = document.querySelector(`.btn-mobile-nav`);
 const header = document.querySelector(`.header-section`);
+const heroSection = document.querySelector(`.hero-section`)
 
 navBtn.addEventListener(`click`, function () {
   header.classList.toggle(`nav--open`);
 });
+
+const headerHeight = header.getBoundingClientRect().height;
+const options = {
+  root: null,
+  rootMargin: `-${headerHeight}px`,
+  threshold: 0,
+};
+
+const sticky = function (entries) {
+  const [entry] = entries;
+
+  if (!entry.isIntersecting) header.classList.add(`sticky`);
+  else header.classList.remove(`sticky`)
+};
+
+const heroObserver = new IntersectionObserver(sticky, options);
+
+heroObserver.observe(heroSection);
 
 // SMOOTH SCROLLING BEHAVIOR IN JS. SWITCHED WITH CSS
 
