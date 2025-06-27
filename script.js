@@ -9,9 +9,27 @@ navBtn.addEventListener(`click`, function () {
   header.classList.toggle(`nav--open`);
 });
 
-// SMOOTH SCROLLING BEHAVIOR IN JS. SWITCHED WITH CSS 
+// SMOOTH SCROLLING BEHAVIOR IN JS. SWITCHED WITH CSS
 
-// const navBar = document.querySelector(`.nav-bar`);
+// const allLinks = document.querySelectorAll(`a`);
+// allLinks.forEach((link) => {
+//   link.addEventListener(`click`, function (e) {
+//     e.preventDefault();
+//     const href = link.getAttribute(`href`);
+//     if (href === `#`)
+//       window.scrollTo({
+//         top: 0,
+//         behaviour: "smooth",
+//       });
+
+//     if (href !== `#` && href.startsWith(`#`)) {
+//       const section = document.querySelector(href);
+//       section.scrollIntoView({ behavior: "smooth" });
+//     }
+//   });
+// });
+
+//  **************************************
 
 // const howBtn = document.querySelector(`#how`);
 // const howSection = document.querySelector(`.section-how`);
@@ -29,6 +47,7 @@ navBtn.addEventListener(`click`, function () {
 // const ctaSection = document.querySelector(`.cta-section`);
 
 // navBar.addEventListener(`click`, function (e) {
+//   e.preventDefault();
 //   if (!e.target.classList.contains(`section-nav-link`)) return;
 //   if (e.target === howBtn) howSection.scrollIntoView({ behavior: "smooth" });
 //   if (e.target === mealBtn) mealsSection.scrollIntoView({ behavior: "smooth" });
