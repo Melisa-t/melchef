@@ -9,30 +9,32 @@ navBtn.addEventListener(`click`, function () {
   header.classList.toggle(`nav--open`);
 });
 
-const navBar = document.querySelector(`.nav-bar`);
+// SMOOTH SCROLLING BEHAVIOR IN JS. SWITCHED WITH CSS 
 
-const howBtn = document.querySelector(`#how`);
-const howSection = document.querySelector(`.section-how`);
+// const navBar = document.querySelector(`.nav-bar`);
 
-const mealBtn = document.querySelector(`#meals`);
-const mealsSection = document.querySelector(`.meals-section`);
+// const howBtn = document.querySelector(`#how`);
+// const howSection = document.querySelector(`.section-how`);
 
-const testimonialsBtn = document.querySelector(`#testimonials`);
-const testimonialSection = document.querySelector(`.testimonials-section`);
+// const mealBtn = document.querySelector(`#meals`);
+// const mealsSection = document.querySelector(`.meals-section`);
 
-const pricingBtn = document.querySelector(`#pricing`);
-const pricingSection = document.querySelector(`.section-pricing`);
+// const testimonialsBtn = document.querySelector(`#testimonials`);
+// const testimonialSection = document.querySelector(`.testimonials-section`);
 
-const ctaBtn = document.querySelector(`#cta`);
-const ctaSection = document.querySelector(`.cta-section`);
+// const pricingBtn = document.querySelector(`#pricing`);
+// const pricingSection = document.querySelector(`.section-pricing`);
 
-navBar.addEventListener(`click`, function (e) {
-  if (!e.target.classList.contains(`section-nav-link`)) return;
-  if (e.target === howBtn) howSection.scrollIntoView({ behavior: "smooth" });
-  if (e.target === mealBtn) mealsSection.scrollIntoView({ behavior: "smooth" });
-  if (e.target === testimonialsBtn)
-    testimonialSection.scrollIntoView({ behavior: "smooth" });
-  if (e.target === pricingBtn)
-    pricingSection.scrollIntoView({ behavior: "smooth" });
-  if (e.target === ctaBtn) ctaSection.scrollIntoView({ behavior: "smooth" });
-});
+// const ctaBtn = document.querySelector(`#cta`);
+// const ctaSection = document.querySelector(`.cta-section`);
+
+// navBar.addEventListener(`click`, function (e) {
+//   if (!e.target.classList.contains(`section-nav-link`)) return;
+//   if (e.target === howBtn) howSection.scrollIntoView({ behavior: "smooth" });
+//   if (e.target === mealBtn) mealsSection.scrollIntoView({ behavior: "smooth" });
+//   if (e.target === testimonialsBtn)
+//     testimonialSection.scrollIntoView({ behavior: "smooth" });
+//   if (e.target === pricingBtn)
+//     pricingSection.scrollIntoView({ behavior: "smooth" });
+//   if (e.target === ctaBtn) ctaSection.scrollIntoView({ behavior: "smooth" });
+// });
