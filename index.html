@@ -6,6 +6,9 @@
     <meta name="description" content="MelFood is AI-powered food application. Tailored to your personal diet and needs.">
     <title>MelFood</title>
     <link rel="icon" type="image/x-icon" href="img/logo.png" />
+    <link rel="apple-touch-icon" href="img/logo.png" width="180px" height="180px">
+    
+
     <link
       rel="stylesheet"
       href="style.css
@@ -86,11 +89,15 @@
               <p><span>+2.000</span> reviews and counting!</p>
             </div>
           </div>
-          <img
+          <picture>
+            <source srcset="img/hero.webp" type="image/webp">
+            <source srcset="img/hero-min.png" type="image/png">
+            <img
             class="hero-img"
-            src="/img/hero.png"
+            src="/img/hero-min.png"
             alt="Purple flowers with vibrant leaves, vibrantly colored leaves, and a butterfly on a vibrant leaf."
-          />
+            />
+          </picture>
         </div>
       </section>
       <section class="featured-in">
